@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Nicolae Constantin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/menuStyle.css" />
+    <link rel="stylesheet" href="style/mainBoth.css" />
+    <noscript>
+        <link rel="stylesheet" href="style/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+    <div class="navTrigger" onclick="toggleMenu()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prices.html">Prices</a>
+    </div>
+
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main">
+
+            <h2>I am always available at ...</h2>
+
+            <form method="post" action="#">
+                <div class="field">
+                    <label>Phone number: </label>
+                    <label>+44072899317</label>
+                </div>
+                <div class="field">
+                    <label> Address: </label>
+                    <label> 16 Insert My Address Here</label>
+                </div>
+                <div class="field">
+                    <label> Email: </label>
+                    <label> myEmailAddress@email.com</label>
+                </div>
+
+                <hr />
+
+                <label>Email me: </label>
+
+                <div class="field">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="field">
+                    <div class="select-wrapper">
+                        <select name="department" id="department">
+                            <option selected disabled>Contacting me for :</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="shoot">Photo shoot request</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                </div>
+
+                <ul class="actions">
+                    <li>
+                        <a href="#" class="button">Send Email</a>
+                    </li>
+                </ul>
+            </form>
+            <hr />
+
+            <footer>
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="fa-twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa-instagram">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa-facebook">Facebook</a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; C. Nicolae</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/skel.min.js"></script>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

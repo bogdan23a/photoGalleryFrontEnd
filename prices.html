@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Nicolae Constantin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/menuStyle.css" />
+    <link rel="stylesheet" href="style/mainBoth.css" />
+    <noscript>
+        <link rel="stylesheet" href="style/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+    <div class="navTrigger" onclick="toggleMenu()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main">
+
+            <header>
+                <span class="avatar">
+                    <img src="images/pricesAvatar.jpg" alt="" />
+                </span>
+                <h1>Hire Me!</h1>
+            </header>
+            <!-- <hr/> -->
+            <p>Wedding : 200 £</p>
+
+            <p>Photo Shooting : 50 £ / person</p>
+
+            <p>Football/sports game : 300 £</p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; C. Nicolae</li>
+                <li>:
+                    <a href="http://html5up.net"></a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/skel.min.js"></script>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
